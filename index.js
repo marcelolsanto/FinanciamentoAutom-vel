@@ -5,7 +5,7 @@ function calcular() {
         var total = Number(in_financiamento.value);
         var qtparcelas = Number(in_qtparcelas.value);
         var parcela = total/qtparcelas;
-        var prestacao = 01;
+        var prestacao = 1;
 
         if (total < 1000 || total == "" ) {
             alert('Valor total inválido! Insira um valor maior ou igual a R$ 1.000,00!');
