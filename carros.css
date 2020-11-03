@@ -24,10 +24,10 @@
     object-fit: cover;
 }
 .banner{
-    width: 900px;
+    width: 800px;
     height: 255px;
     bottom: 260px;
-    left: 460px;
+    left: 565px;
     position: relative;
     border-radius: 15px;
     background-color: rgba(51, 51,51, 0.2);
@@ -35,7 +35,15 @@
 .banner{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: space-between;
+}
+h3 {
+    margin: none;
+    font-family: Verdana;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 15px rgb(0, 0, 0);
+    display: flex;
 }
 .form{
     width: 350px;
@@ -43,31 +51,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 .home_label{
-    font-family: Verdana;
-    color: blanchedalmond;
-    font-size: 1.3rem;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 .entrada{
-    height: 1.5rem;
+    height: 2rem;
     width: 15rem;
+    margin-top: 1rem;
     border-radius: 5px;
     border: none;
     box-shadow: 2px 2px 4px rgb(146, 185, 207);
-    margin-bottom: 1rem;
-    margin-top: 1rem;
 }
 .btn_home{
     height: 2rem;
     width: 15.3rem;
     font-family: Verdana;
-    color: blanchedalmond;
+    color: whitesmoke;
     font-size: 1.3rem;
     border-radius: 5px;
     border: none;
@@ -85,11 +89,11 @@
 .mensagem{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 450px;
-    color: blanchedalmond;
+    color: whitesmoke;
     font-size: 1.3rem;
-    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+    text-shadow: 2px 2px 20px rgb(0, 0, 0);
     font-family: Verdana;
 }
 .mensagem1{

@@ -18,20 +18,20 @@ function calcular() {
             limpar()
         } else if (qtparcelas >= 6 && qtparcelas <= 10 ){
             while (prestacao <= qtparcelas) {
-                div_parcela1.innerHTML += `Parcela ${prestacao}: R$${parcela.toFixed(2)}<br>`;
+                div_parcela1.innerHTML += `Parcela ${prestacao}: R$ ${parcela.toFixed(2)}<br>`;
                 limpar()
                 prestacao++;
                 parcela *= juros;
             }
         } else {
             while (qtparcelas <= 20 && prestacao <= 10 ) {
-                div_parcela1.innerHTML += `Parcela ${prestacao}: R$${parcela.toFixed(2)}<br>`;
+                div_parcela1.innerHTML += `Parcela ${prestacao}: R$ ${parcela.toFixed(2)}<br>`;
                 limpar()
                 prestacao++;
                 parcela *= juros;
             }
             while (qtparcelas <= 20 && prestacao <= qtparcelas) {
-                div_parcela2.innerHTML += `Parcela ${prestacao}: R$${parcela.toFixed(2)}<br>`;
+                div_parcela2.innerHTML += `Parcela ${prestacao}: R$ ${parcela.toFixed(2)}<br>`;
                 limpar()
                 prestacao++;
                 parcela *= juros;
