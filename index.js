@@ -9,25 +9,36 @@ function calcular() {
 
         if (total < 1000 || total == "" ) {
             alert('Valor total inválido! Insira um valor maior ou igual a R$ 1.000,00!');
+            limpar()
         } else if (qtparcelas < 6 || qtparcelas == "" ) {
-            alert('Parcelas inválidas! Insira parcelas maior ou igua a 6!');
-        } else if (qtparcelas <=10){
-            while (prestacao <= 10) {
+            alert('Parcelas inválidas! Insira parcelas maiores ou igual a 6!');
+            limpar()
+        } else if (qtparcelas > 20 ) {
+            alert('Parcelas inválidas! Insira parcelas menores ou igual a 20!');
+            limpar()
+        } else if (qtparcelas >= 6 && qtparcelas <= 10 ){
+            while (prestacao <= qtparcelas) {
                 div_parcela1.innerHTML += `Parcela ${prestacao}: R$${parcela.toFixed(2)}<br>`;
+                limpar()
                 prestacao++;
                 parcela *= juros;
             }
-
         } else {
-            while (prestacao <= 10) {
+            while (qtparcelas <= 20 && prestacao <= 10 ) {
                 div_parcela1.innerHTML += `Parcela ${prestacao}: R$${parcela.toFixed(2)}<br>`;
+                limpar()
                 prestacao++;
                 parcela *= juros;
             }
-            while (prestacao <= 20) {
+            while (qtparcelas <= 20 && prestacao <= qtparcelas) {
                 div_parcela2.innerHTML += `Parcela ${prestacao}: R$${parcela.toFixed(2)}<br>`;
+                limpar()
                 prestacao++;
                 parcela *= juros;
             }
         }
-    }
+}
+function limpar() {
+    in_financiamento.value = '';
+    in_qtparcelas.value = '';
+}
