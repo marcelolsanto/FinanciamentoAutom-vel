@@ -1,6 +1,6 @@
 function calcular() {
-        div_parcela1.innerHTML += ``;
-        div_parcela2.innerHTML += ``;
+        div_parcela1.innerHTML = '';
+        div_parcela2.innerHTML = '';
         const juros = (100+1.5)/100;
         var total = Number(in_financiamento.value);
         var qtparcelas = Number(in_qtparcelas.value);
